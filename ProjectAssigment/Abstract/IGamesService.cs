@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProjectAssigment.Abstract
 {
-    interface ISalesService
+    interface IGamesService
     {
-        void Sale(Customer customer, Games games, GameOffer gameOffer);
-        void Sale(Customer customer, Games games);
+        void Add(Games games);
+        void Update(Games games);
+        void Delete(Games games);
     }
 }

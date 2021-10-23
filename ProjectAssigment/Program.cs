@@ -21,6 +21,9 @@ namespace ProjectAssigment
             
             Games games1 = new Games { Id=1,Price=100,NameOfTheGame="Fifa2021"};
 
+            IGamesService gamesService = new GamesManager();
+            gamesService.Add(games1);
+
             GameOffer gameOffer1 = new GameOffer { Id=1,Explanation="İndirim",DiscountRate="%35"};
 
             IOfferService gameOfferManager = new GameOfferManager();
